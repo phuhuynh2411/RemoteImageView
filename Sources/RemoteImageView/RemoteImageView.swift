@@ -13,7 +13,7 @@ public struct RemoteImageView : View {
     @ObservedObject public var imageModel: ImageModel
     public var placeholder: Image
     
-    init(stringURL: String, placeholder: Image = Image("image_placeholder")) {
+    public init(stringURL: String, placeholder: Image = Image("image_placeholder")) {
         self.placeholder = placeholder
 
         if let url = URL(string: stringURL) {
