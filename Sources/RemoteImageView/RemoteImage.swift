@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct RemoteImageView : View {
+public struct RemoteImageView : View {
     @ObservedObject var imageModel: ImageModel
     var placeholder: Image
     
@@ -23,7 +23,7 @@ struct RemoteImageView : View {
         imageModel = ImageModel(url: nil)
     }
     
-    var body: some View {
+    public var body: some View {
         imageModel
             .image
             .map { Image(uiImage:$0).resizable().renderingMode(.original) }
