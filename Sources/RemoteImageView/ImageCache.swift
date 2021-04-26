@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import UIKit
 
-class ImageCache {
+public class ImageCache {
     
     enum Error: Swift.Error {
         case dataConversionFailed

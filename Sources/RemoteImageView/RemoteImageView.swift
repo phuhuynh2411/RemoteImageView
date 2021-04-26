@@ -10,8 +10,8 @@ import Foundation
 import SwiftUI
 
 public struct RemoteImageView : View {
-    @ObservedObject var imageModel: ImageModel
-    var placeholder: Image
+    @ObservedObject public var imageModel: ImageModel
+    public var placeholder: Image
     
     init(stringURL: String, placeholder: Image = Image("image_placeholder")) {
         self.placeholder = placeholder

@@ -10,7 +10,7 @@ import Foundation
 import Combine
 import UIKit
 
-class ImageModel: ObservableObject {
+public class ImageModel: ObservableObject {
     
     @Published var image: UIImage? = nil
     
